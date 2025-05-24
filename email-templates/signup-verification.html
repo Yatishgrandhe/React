@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Your Email</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #eaeaea;
+    }
+    .logo {
+      max-width: 150px;
+      height: auto;
+    }
+    .content {
+      padding: 30px 20px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #2A85A0;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .button:hover {
+      background-color: #236c82;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #666;
+      border-top: 1px solid #eaeaea;
+    }
+    .note {
+      font-size: 13px;
+      color: #666;
+      margin-top: 30px;
+    }
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #2A85A0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="{{websiteUrl}}/images/clt-volunteer-central-logo.png" alt="CLT Volunteer Central Logo" class="logo">
+    </div>
+    <div class="content">
+      <h1>Verify Your Email</h1>
+      <p>Hello {{name}},</p>
+      <p>Thank you for signing up with CLT Volunteer Central! To complete your registration and start making a difference in your community, please verify your email address by clicking the button below:</p>
+      
+      <div style="text-align: center;">
+        <a href="{{verificationLink}}" class="button">Verify Email Address</a>
+      </div>
+      
+      <p>This link will expire in 24 hours. If you did not create an account with CLT Volunteer Central, please ignore this email.</p>
+      
+      <div class="note">
+        <p>If the button above doesn't work, copy and paste the following link into your browser:</p>
+        <p style="word-break: break-all;">{{verificationLink}}</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>CLT Volunteer Central - Connecting volunteers with opportunities in Charlotte</p>
+      <p>© {{year}} CLT Volunteer Central. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
